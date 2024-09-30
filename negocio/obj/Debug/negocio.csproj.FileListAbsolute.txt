@@ -1,0 +1,27 @@
+C:\Users\giuli\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\negocio\bin\Debug\negocio.dll
+C:\Users\giuli\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\negocio\bin\Debug\negocio.pdb
+C:\Users\giuli\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\negocio\bin\Debug\dominio.dll
+C:\Users\giuli\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\negocio\bin\Debug\dominio.pdb
+C:\Users\giuli\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\giuli\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\giuli\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\negocio\obj\Debug\negocio.csproj.CopyComplete
+C:\Users\giuli\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\negocio\obj\Debug\negocio.dll
+C:\Users\giuli\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\negocio\obj\Debug\negocio.pdb
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\negocio\bin\Debug\negocio.dll
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\negocio\bin\Debug\negocio.pdb
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\negocio\bin\Debug\dominio.dll
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\negocio\bin\Debug\dominio.pdb
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\negocio\obj\Debug\negocio.csproj.Up2Date
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\negocio\obj\Debug\negocio.dll
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\negocio\obj\Debug\negocio.pdb
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PruebaTpWebNico\proyecto_Prueba\negocio\bin\Debug\negocio.dll
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PruebaTpWebNico\proyecto_Prueba\negocio\bin\Debug\negocio.pdb
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PruebaTpWebNico\proyecto_Prueba\negocio\bin\Debug\dominio.dll
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PruebaTpWebNico\proyecto_Prueba\negocio\bin\Debug\dominio.pdb
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PruebaTpWebNico\proyecto_Prueba\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PruebaTpWebNico\proyecto_Prueba\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PruebaTpWebNico\proyecto_Prueba\negocio\obj\Debug\negocio.csproj.Up2Date
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PruebaTpWebNico\proyecto_Prueba\negocio\obj\Debug\negocio.dll
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PruebaTpWebNico\proyecto_Prueba\negocio\obj\Debug\negocio.pdb

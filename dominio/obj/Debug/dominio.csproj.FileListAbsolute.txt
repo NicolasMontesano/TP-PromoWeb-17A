@@ -1,0 +1,18 @@
+C:\Users\giuli\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\dominio\bin\Debug\dominio.dll
+C:\Users\giuli\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\dominio\bin\Debug\dominio.pdb
+C:\Users\giuli\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\giuli\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\giuli\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\dominio\obj\Debug\dominio.dll
+C:\Users\giuli\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\dominio\obj\Debug\dominio.pdb
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\dominio\bin\Debug\dominio.dll
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\dominio\bin\Debug\dominio.pdb
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\dominio\obj\Debug\dominio.dll
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Prueba Técnica\WebArtic\dominio\obj\Debug\dominio.pdb
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PruebaTpWebNico\proyecto_Prueba\dominio\bin\Debug\dominio.dll
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PruebaTpWebNico\proyecto_Prueba\dominio\bin\Debug\dominio.pdb
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PruebaTpWebNico\proyecto_Prueba\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PruebaTpWebNico\proyecto_Prueba\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PruebaTpWebNico\proyecto_Prueba\dominio\obj\Debug\dominio.dll
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PruebaTpWebNico\proyecto_Prueba\dominio\obj\Debug\dominio.pdb
