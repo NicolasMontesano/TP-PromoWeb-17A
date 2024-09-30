@@ -24,7 +24,7 @@ namespace WebArtic
             nuevo.Descripcion = txtDescripcion.Text;
             nuevo.Precio = int.Parse(txtPrecio.Text);
             nuevo.Codigo = txtCodigo.Text;
-            nuevo.ImagenUrl = txtImagen.Text;
+            //nuevo.ImagenUrl = txtImagen.Text;
             nuevo.Nombre = txtNombre.Text;
 
             negocio.agregar(nuevo);

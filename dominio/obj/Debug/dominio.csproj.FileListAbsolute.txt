@@ -16,3 +16,9 @@ C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PruebaTpWebNico\proyecto_Prueba\
 C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PruebaTpWebNico\proyecto_Prueba\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
 C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PruebaTpWebNico\proyecto_Prueba\dominio\obj\Debug\dominio.dll
 C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PruebaTpWebNico\proyecto_Prueba\dominio\obj\Debug\dominio.pdb
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PRWeb\dominio\bin\Debug\dominio.dll
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PRWeb\dominio\bin\Debug\dominio.pdb
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PRWeb\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PRWeb\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PRWeb\dominio\obj\Debug\dominio.dll
+C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PRWeb\dominio\obj\Debug\dominio.pdb
