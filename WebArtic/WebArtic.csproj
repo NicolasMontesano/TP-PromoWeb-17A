@@ -68,6 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="Exito.aspx" />
+    <Content Include="FormDatos.aspx" />
     <Content Include="FormularioArticulos.aspx" />
     <Content Include="ListaArticulos.aspx" />
     <Content Include="Web.config" />
@@ -79,6 +82,27 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exito.aspx.cs">
+      <DependentUpon>Exito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exito.aspx.designer.cs">
+      <DependentUpon>Exito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormDatos.aspx.cs">
+      <DependentUpon>FormDatos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormDatos.aspx.designer.cs">
+      <DependentUpon>FormDatos.aspx</DependentUpon>
     </Compile>
     <Compile Include="FormularioArticulos.aspx.cs">
       <DependentUpon>FormularioArticulos.aspx</DependentUpon>

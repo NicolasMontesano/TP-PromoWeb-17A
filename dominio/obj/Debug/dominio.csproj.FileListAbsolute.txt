@@ -22,3 +22,9 @@ C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PRWeb\dominio\obj\Debug\dominio.
 C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PRWeb\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
 C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PRWeb\dominio\obj\Debug\dominio.dll
 C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PRWeb\dominio\obj\Debug\dominio.pdb
+C:\Users\DIEGO\Desktop\WEBFORMS\TP-PromoWeb-17A\dominio\bin\Debug\dominio.dll
+C:\Users\DIEGO\Desktop\WEBFORMS\TP-PromoWeb-17A\dominio\bin\Debug\dominio.pdb
+C:\Users\DIEGO\Desktop\WEBFORMS\TP-PromoWeb-17A\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\DIEGO\Desktop\WEBFORMS\TP-PromoWeb-17A\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\DIEGO\Desktop\WEBFORMS\TP-PromoWeb-17A\dominio\obj\Debug\dominio.dll
+C:\Users\DIEGO\Desktop\WEBFORMS\TP-PromoWeb-17A\dominio\obj\Debug\dominio.pdb

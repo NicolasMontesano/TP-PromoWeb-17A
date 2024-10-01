@@ -34,3 +34,12 @@ C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PRWeb\negocio\obj\Debug\negocio.
 C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PRWeb\negocio\obj\Debug\negocio.csproj.Up2Date
 C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PRWeb\negocio\obj\Debug\negocio.dll
 C:\Users\nicoj\OneDrive\Escritorio\Nico\Progra3\PRWeb\negocio\obj\Debug\negocio.pdb
+C:\Users\DIEGO\Desktop\WEBFORMS\TP-PromoWeb-17A\negocio\bin\Debug\negocio.dll
+C:\Users\DIEGO\Desktop\WEBFORMS\TP-PromoWeb-17A\negocio\bin\Debug\negocio.pdb
+C:\Users\DIEGO\Desktop\WEBFORMS\TP-PromoWeb-17A\negocio\bin\Debug\dominio.dll
+C:\Users\DIEGO\Desktop\WEBFORMS\TP-PromoWeb-17A\negocio\bin\Debug\dominio.pdb
+C:\Users\DIEGO\Desktop\WEBFORMS\TP-PromoWeb-17A\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\DIEGO\Desktop\WEBFORMS\TP-PromoWeb-17A\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\DIEGO\Desktop\WEBFORMS\TP-PromoWeb-17A\negocio\obj\Debug\negocio.csproj.Up2Date
+C:\Users\DIEGO\Desktop\WEBFORMS\TP-PromoWeb-17A\negocio\obj\Debug\negocio.dll
+C:\Users\DIEGO\Desktop\WEBFORMS\TP-PromoWeb-17A\negocio\obj\Debug\negocio.pdb
