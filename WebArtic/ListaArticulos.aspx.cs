@@ -11,24 +11,17 @@ namespace WebArtic
 {
     public partial class ListaArticulos : System.Web.UI.Page
     {
+        public List<Articulo> ListArt { get; set; }
+        public List<Imagen> ListImg { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
-            Session.Add("listaArticulos", negocio.listar());
 
-            dgvArticulos.DataSource = Session["listaArticulos"];
-            dgvArticulos.DataBind();
+            ListArt = negocio.listar();
+            ListImg = negocio.listarImagen();
+
         }
 
-        protected void dgvArticulos_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string id = dgvArticulos.SelectedDataKey.Value.ToString();
-            Response.Redirect("FormularioPokemon.aspx?id=" + id);
-        }
-
-        protected void dgvArticulos_PageIndexChanged(object sender, EventArgs e)
-        {
-           
-        }
+      
     }
 }

@@ -40,7 +40,7 @@ namespace WebArtic
                 {
                     DateTime fecha = new DateTime();
                     
-                    if(voucher.idCliente > 0 && voucher.idArticulo > 0 && voucher.fechaCanje != fecha) //no se utilizó aún
+                    if(!(voucher.idCliente > 0 && voucher.idArticulo > 0 && voucher.fechaCanje != fecha)) //no se utilizó aún
                     {
                         Session.Add("voucher", voucher); //envío el voucher por session y lo recuperamos desde las demás páginas
                         Response.Redirect("ListaArticulos.aspx");

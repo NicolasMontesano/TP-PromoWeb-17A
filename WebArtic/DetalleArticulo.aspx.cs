@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace WebArtic
 {
-    public partial class Exito : Page
+    public partial class DetalleArticulo : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-        
+
         }
     }
 }
