@@ -11,7 +11,19 @@ namespace WebArtic
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-        
+            if (!IsPostBack)
+            {
+                
+                if (Request.QueryString["nombre"] != null)
+                {
+                    string nombre = Request.QueryString["nombre"];
+                    litMensajeExito.Text = "Registro exitoso " + nombre + "!";
+                }
+                else
+                {
+                    litMensajeExito.Text = " Registro exitoso!";
+                }
+            }
         }
     }
 }

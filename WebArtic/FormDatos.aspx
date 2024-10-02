@@ -6,6 +6,7 @@
     <h1>Ingresá tus datos</h1>
     <div class="row">
         <div class="col-6">
+            <asp:Label ID="lblMensajeError" runat="server" ForeColor="Red" />
             <div class="mb-3">
                 <label for="txtDNI" class="form-label">DNI</label>
                 <asp:TextBox ID="txtDNI" CssClass="form-control" runat="server"></asp:TextBox>
@@ -46,3 +47,4 @@
         </div>
     </div>
 </asp:Content>
+
