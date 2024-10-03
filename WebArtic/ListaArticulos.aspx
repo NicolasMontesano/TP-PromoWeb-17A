@@ -40,8 +40,10 @@
 
                 <div class="card-body">
                     <h5 class="card-title"><%: art.Nombre %></h5>
-                    <p class="card-text"><%: art.Descripcion %></p>
+                    <p class="card-text"><%: art.Categoria.Descripcion %></p>
+                    <p class="card-text"><%: art.Marca.Descripcion %></p>
                     <a class="btn btn-primary" href="DetalleArticulo.aspx?id=<%: art.Id %>">Ver Detalle</a>
+                    <a class="btn btn-success" href="FormDatos.aspx?id=<%: art.Id %>">Seleccionar</a>
                 </div>
             </div>
         </div>
