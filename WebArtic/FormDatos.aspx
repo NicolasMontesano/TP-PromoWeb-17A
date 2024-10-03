@@ -2,15 +2,17 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>Ingresá tus datos</h1>
-    <div class="row">
-        <div class="col-6">
-            <asp:Label ID="lblMensajeError" runat="server" ForeColor="Red" />
-            <div class="mb-3">
-                <label for="txtDNI" class="form-label">DNI</label>
-                <asp:TextBox ID="txtDNI" CssClass="form-control" runat="server"></asp:TextBox>
-            </div>
+<asp:Content ID="Content6" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="container mt-5">
+        <h1>Registro de Cliente</h1>
+        
+        <div class="mb-3">
+            <label for="txtDNI" class="form-label">DNI</label>
+            <asp:TextBox ID="txtDNI" CssClass="form-control" runat="server" placeholder="Ingrese su DNI"></asp:TextBox>
+        </div>
+        <asp:Button Text="Verificar DNI" CssClass="btn btn-secondary" ID="btnVerificarDNI" OnClick="btnVerificarDNI_Click" runat="server" />
+
+        <div id="formularioDatos" runat="server" visible="false">
             <div class="mb-3">
                 <label for="txtNombre" class="form-label">Nombre</label>
                 <asp:TextBox ID="txtNombre" CssClass="form-control" runat="server"></asp:TextBox>
@@ -21,11 +23,7 @@
             </div>
             <div class="mb-3">
                 <label for="txtEmail" class="form-label">Email</label>
-                <div class="input-group">
-                    <asp:TextBox ID="txtEmail" CssClass="form-control" runat="server" placeholder="email"></asp:TextBox>
-                    <span class="input-group-text">@</span>
-                    <asp:TextBox ID="txtEmailDomain" CssClass="form-control" runat="server" placeholder="email.com"></asp:TextBox>
-                </div>
+                <asp:TextBox ID="txtEmail" CssClass="form-control" runat="server"></asp:TextBox>
             </div>
             <div class="mb-3">
                 <label for="txtDireccion" class="form-label">Dirección</label>
@@ -39,12 +37,11 @@
                 <label for="txtCP" class="form-label">Código Postal</label>
                 <asp:TextBox ID="txtCP" CssClass="form-control" runat="server"></asp:TextBox>
             </div>
-            <div class="mb-3 form-check">
-                <asp:CheckBox ID="chkAceptar" CssClass="form-check-input" runat="server" />
-                <label class="form-check-label" for="chkAceptar">Acepto los términos y condiciones</label>
-            </div>
             <asp:Button Text="Participar!" CssClass="btn btn-primary" ID="btnParticipar" OnClick="btnParticipar_Click" runat="server" />
         </div>
+
+        <asp:Label ID="lblError" runat="server" CssClass="text-danger" Visible="false"></asp:Label>
     </div>
 </asp:Content>
+
 

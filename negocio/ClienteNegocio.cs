@@ -36,5 +36,41 @@ namespace negocio
                 datos.cerrarConexion();
             }
         }
+
+        public Cliente ObtenerClientePorDNI(string dni)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta("SELECT Documento, Nombre, Apellido, Email, Direccion, Ciudad, CP FROM Clientes WHERE Documento = @DNI");
+                datos.setearParametro("@DNI", dni);
+                datos.ejecutarLectura();
+
+                if (datos.Lector.Read())
+                {
+                    Cliente cliente = new Cliente
+                    {
+                        DNI = (string)datos.Lector["Documento"],
+                        Nombre = (string)datos.Lector["Nombre"],
+                        Apellido = (string)datos.Lector["Apellido"],
+                        Mail = (string)datos.Lector["Email"],
+                        Direccion = (string)datos.Lector["Direccion"],
+                        Ciudad = (string)datos.Lector["Ciudad"],
+                        CP = (int)datos.Lector["CP"]
+                    };
+                    return cliente;
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
     }
 }

@@ -13,7 +13,7 @@ namespace WebArtic
         {
             if (!IsPostBack)
             {
-                
+
                 if (Request.QueryString["nombre"] != null)
                 {
                     string nombre = Request.QueryString["nombre"];

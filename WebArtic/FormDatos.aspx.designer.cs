@@ -15,15 +15,6 @@ namespace WebArtic
     {
 
         /// <summary>
-        /// Control lblMensajeError.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMensajeError;
-
-        /// <summary>
         /// Control txtDNI.
         /// </summary>
         /// <remarks>
@@ -31,6 +22,24 @@ namespace WebArtic
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDNI;
+
+        /// <summary>
+        /// Control btnVerificarDNI.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnVerificarDNI;
+
+        /// <summary>
+        /// Control formularioDatos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl formularioDatos;
 
         /// <summary>
         /// Control txtNombre.
@@ -60,15 +69,6 @@ namespace WebArtic
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
-        /// Control txtEmailDomain.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmailDomain;
-
-        /// <summary>
         /// Control txtDireccion.
         /// </summary>
         /// <remarks>
@@ -96,15 +96,6 @@ namespace WebArtic
         protected global::System.Web.UI.WebControls.TextBox txtCP;
 
         /// <summary>
-        /// Control chkAceptar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkAceptar;
-
-        /// <summary>
         /// Control btnParticipar.
         /// </summary>
         /// <remarks>
@@ -112,5 +103,14 @@ namespace WebArtic
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnParticipar;
+
+        /// <summary>
+        /// Control lblError.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblError;
     }
 }

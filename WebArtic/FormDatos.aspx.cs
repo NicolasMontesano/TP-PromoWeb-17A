@@ -13,81 +13,83 @@ namespace WebArtic
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
+
+        protected void btnVerificarDNI_Click(object sender, EventArgs e)
+        {
+            ClienteNegocio negocio = new ClienteNegocio();
+            string dni = txtDNI.Text;
+
+            if (!string.IsNullOrEmpty(dni))
+            {
+                Cliente clienteExistente = negocio.ObtenerClientePorDNI(dni);
+
+                if (clienteExistente != null)
+                {
+                    txtNombre.Text = clienteExistente.Nombre;
+                    txtApellido.Text = clienteExistente.Apellido;
+                    txtEmail.Text = clienteExistente.Mail;
+                    txtDireccion.Text = clienteExistente.Direccion;
+                    txtCiudad.Text = clienteExistente.Ciudad;
+                    txtCP.Text = clienteExistente.CP.ToString();
+                }
+                else
+                {
+                    lblError.Text = "No se encontró ningún cliente con ese DNI. Por favor, ingrese sus datos.";
+                    lblError.Visible = true;
+                }
+
+                formularioDatos.Visible = true;
+            }
+            else
+            {
+                lblError.Text = "Por favor, ingrese un DNI válido.";
+                lblError.Visible = true;
+            }
+        }
+
         protected void btnParticipar_Click(object sender, EventArgs e)
         {
             if (ValidarCampos())
             {
+                ClienteNegocio negocio = new ClienteNegocio();
 
                 Cliente nuevoCliente = new Cliente
                 {
                     DNI = txtDNI.Text,
                     Nombre = txtNombre.Text,
                     Apellido = txtApellido.Text,
-                    Mail = txtEmail.Text + "@" + txtEmailDomain.Text,
+                    Mail = txtEmail.Text,
                     Direccion = txtDireccion.Text,
                     Ciudad = txtCiudad.Text,
                     CP = int.Parse(txtCP.Text)
                 };
 
-                ClienteNegocio negocio = new ClienteNegocio();
                 try
                 {
                     negocio.AgregarCliente(nuevoCliente);
                     Response.Redirect("Exito.aspx?nombre=" + nuevoCliente.Nombre);
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    Response.Redirect("ErrorPage.aspx");
+                    string error = Server.UrlEncode(ex.Message);
+                    Response.Redirect("ErrorPage.aspx?error=" + error);
                 }
-            } 
+            }
         }
+
         private bool ValidarCampos()
         {
-            if (string.IsNullOrEmpty(txtDNI.Text))
+            if (string.IsNullOrEmpty(txtDNI.Text) || string.IsNullOrEmpty(txtNombre.Text) ||
+                string.IsNullOrEmpty(txtApellido.Text) || string.IsNullOrEmpty(txtEmail.Text) ||
+                string.IsNullOrEmpty(txtDireccion.Text) || string.IsNullOrEmpty(txtCiudad.Text) ||
+                string.IsNullOrEmpty(txtCP.Text))
             {
-                lblMensajeError.Text = "El campo DNI es obligatorio.";
+                lblError.Text = "Por favor, complete todos los campos.";
+                lblError.Visible = true;
                 return false;
             }
-            if (string.IsNullOrEmpty(txtNombre.Text))
-            {
-                lblMensajeError.Text = "El campo Nombre es obligatorio.";
-                return false;
-            }
-            if (string.IsNullOrEmpty(txtApellido.Text))
-            {
-                lblMensajeError.Text = "El campo Apellido es obligatorio.";
-                return false;
-            }
-            if (string.IsNullOrEmpty(txtEmail.Text) || string.IsNullOrEmpty(txtEmailDomain.Text))
-            {
-                lblMensajeError.Text = "El campo mail es obligatorio.";
-                return false;
-            }
-            if (string.IsNullOrEmpty(txtDireccion.Text))
-            {
-                lblMensajeError.Text = "El campo Dirección es obligatorio.";
-                return false;
-            }
-            if (string.IsNullOrEmpty(txtCiudad.Text))
-            {
-                lblMensajeError.Text = "El campo Ciudad es obligatorio.";
-                return false;
-            }
-            if (string.IsNullOrEmpty(txtCP.Text))
-            {
-                lblMensajeError.Text = "El campo Codifgo Postal es obligatorio.";
-                return false;
-            }
-            if (!chkAceptar.Checked)
-            {
-                lblMensajeError.Text = "Debe aceptar los terminos y condiciones.";
-                return false;
-            }
-
             return true;
         }
-
     }
 }
