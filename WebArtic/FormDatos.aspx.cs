@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -52,7 +52,7 @@ namespace WebArtic
         {
             if (ValidarCampos())
             {
-                ClienteNegocio negocio = new ClienteNegocio();
+                
 
                 Cliente nuevoCliente = new Cliente
                 {
@@ -65,15 +65,22 @@ namespace WebArtic
                     CP = int.Parse(txtCP.Text)
                 };
 
+                ClienteNegocio negocio = new ClienteNegocio();
                 try
                 {
-                    negocio.AgregarCliente(nuevoCliente);
-                    Response.Redirect("Exito.aspx?nombre=" + nuevoCliente.Nombre);
+                    if (negocio.ExisteClientePorDNI(nuevoCliente.DNI))
+                    {
+                        Response.Redirect("Exito.aspx?nombre=" + nuevoCliente.Nombre);
+                    }
+                    else
+                    {
+                        negocio.AgregarCliente(nuevoCliente);
+                        Response.Redirect("Exito.aspx?nombre=" + nuevoCliente.Nombre);
+                    }
                 }
                 catch (Exception ex)
                 {
-                    string error = Server.UrlEncode(ex.Message);
-                    Response.Redirect("ErrorPage.aspx?error=" + error);
+                    Response.Write("Error: " + ex.Message + "<br />" + ex.StackTrace);
                 }
             }
         }
