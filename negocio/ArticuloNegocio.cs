@@ -10,18 +10,25 @@ namespace negocio
 {
     public class ArticuloNegocio
     {
-        public List<Articulo> listar()
+        public List<Articulo> listar(string id = "")
         {
             List<Articulo> listArt = new List<Articulo>();
             AccesoDatos datos = new AccesoDatos();
             try
             {
 
-                datos.setearConsulta("Select A.Id IdArticulo , A.Codigo, A.Nombre, M.Descripcion Marca,M.id IdMarca, C.Descripcion Categoria, C.Id IdCategoria, A.Precio, A.Descripcion " +
+                string consulta = "Select A.Id IdArticulo , A.Codigo, A.Nombre, M.Descripcion Marca,M.id IdMarca, C.Descripcion Categoria, C.Id IdCategoria, A.Precio, A.Descripcion " +
                     "from ARTICULOS A " +
-                    "INNER JOIN MARCAS M ON A.IdMarca = M.Id " +
-                    "INNER JOIN CATEGORIAS C ON A.IdCategoria = C.Id");
-                //datos.setearConsulta("SELECT Codigo, Nombre, m.Descripcion Marca, C.Descripcion Categoria, Precio, A.Descripcion, I.ImagenUrl  from ARTICULOS A, MARCAS M, CATEGORIAS C, IMAGENES I where A.idmarca = M.id and A.idcategoria = c.id and a.Id = i.IdArticulo");
+                    "INNER JOIN MARCAS M ON A.IdMarca = M.Id  " +
+                    "INNER JOIN CATEGORIAS C ON A.IdCategoria = C.Id ";
+
+                if (id != "")
+                {
+                    consulta += " where A.Id = @id ";
+                }
+                datos.setearConsulta(consulta);
+                datos.setearParametro("@id", id);
+
                 datos.ejecutarLectura();
 
 
@@ -114,7 +121,6 @@ namespace negocio
                 datos.cerrarConexion();
             }
         }
-
         public void eliminar(int id)
         {
             try
@@ -152,6 +158,5 @@ namespace negocio
                 throw ex;
             }
         }
-
     }
 }

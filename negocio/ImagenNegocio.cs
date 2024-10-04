@@ -10,7 +10,35 @@ namespace WindowsFormsApp.negocio
 {
     public class ImagenNegocio
     {
+        public List<Imagen> listarImagenByIdArticulo(int idArticulo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            List<Imagen> listaImg = new List<Imagen>();
+            try
+            {
+                datos.setearConsulta("select Id,IdArticulo,ImagenUrl from Imagenes where IdArticulo = @idArticulo");
+                datos.setearParametro("@idArticulo", idArticulo);
+                datos.ejecutarLectura();
 
+                while (datos.Lector.Read())
+                {
+                    Imagen img = new Imagen();
+
+                    img.Id = (int)datos.Lector["Id"];
+                    img.IdArticulo = (int)datos.Lector["IdArticulo"];
+                    img.ImagenUrl = (string)datos.Lector["ImagenUrl"];
+
+                    listaImg.Add(img);
+                }
+
+                return listaImg;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
         public void agregar(Imagen nuevo)
         {
             AccesoDatos datos = new AccesoDatos();

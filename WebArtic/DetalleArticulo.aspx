@@ -30,6 +30,11 @@
     <div class="row">
         <%--formulario--%>
         <div class="col-md-6">
+            <%--Id--%>
+            <div class="mb-3">
+                <label for="txtId" class="form-label">Id</label>
+                <asp:TextBox ID="txtId" ReadOnly="true" CssClass="form-control" runat="server"></asp:TextBox>
+            </div>
             <%--nombre--%>
             <div class="mb-3">
                 <label for="txtNombre" class="form-label">Nombre</label>
@@ -37,13 +42,13 @@
             </div>
             <%--categoria--%>
             <div class="mb-3">
-                <label for="txtCategoria" class="form-label">Categoria</label>
-                <asp:TextBox ID="txtCategoria" ReadOnly="true" CssClass="form-control" runat="server"></asp:TextBox>
+                <label for="ddlCategoria" class="form-label">Categoria</label>
+                <asp:DropDownList ID="ddlCategoria" Enabled="false" CssClass="form-select" runat="server"></asp:DropDownList>
             </div>
             <%--marca--%>
             <div class="mb-3">
-                <label for="txtMarca" class="form-label">Marca</label>
-                <asp:TextBox ID="txtMarca" ReadOnly="true" CssClass="form-control" runat="server"></asp:TextBox>
+                <label for="ddlMarca" class="form-label">Marca</label>
+                <asp:DropDownList ID="ddlMarca" Enabled="false" CssClass="form-select" runat="server"></asp:DropDownList>
             </div>
             <%--Descripcion--%>
             <div class="mb-3">
@@ -63,18 +68,24 @@
         </div>
 
         <%--carrusel--%>
+
+
         <div class="col-md-6">
             <div id="carouselExampleFade" class="carousel slide carousel-fade">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_703368-MLU76300898146_052024-O.webp" class="d-block w-100" alt="...">
+
+                    <% 
+                        int contador = 0; // Para ver si es el primer elemento
+                        foreach (dominio.Imagen img in ListaImg)
+                        {
+            %>
+                    <div class="carousel-item <%: contador == 0 ? "active" : "" %>">
+                        <img src="<%: img.ImagenUrl %>" class="d-block w-100" alt="...">
                     </div>
-                    <div class="carousel-item">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_701613-MLA45464844877_042021-O.webp" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_767460-MLA74282172500_022024-O.webp" class="d-block w-100" alt="...">
-                    </div>
+                    <% 
+                            contador++;
+                        }
+            %>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -87,5 +98,15 @@
             </div>
         </div>
     </div>
+     <div class="row">
+     <div class="col-6">
+         <div class="mb-3">
+             <asp:Button Text="Seleccionar" ID="btnSeleccionar" OnClick="btnSeleccionar_Click" CssClass="btn btn-success" runat="server" />
+             <asp:Button Text="Atras" ID="btnAtras" OnClick="btnAtras_Click" CssClass="btn btn-light" runat="server" />
+
+         </div>
+     </div>
+ </div>
+
 
 </asp:Content>
