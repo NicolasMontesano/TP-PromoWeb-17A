@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="FormDatos.aspx.cs" Inherits="WebArtic.FormDatos" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="FormDatos.aspx.cs" Inherits="WebArtic.FormDatos" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
@@ -43,5 +43,4 @@
         <asp:Label ID="lblError" runat="server" CssClass="text-danger" Visible="false"></asp:Label>
     </div>
 </asp:Content>
-
 
