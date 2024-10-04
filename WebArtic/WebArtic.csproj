@@ -72,7 +72,6 @@
     <Content Include="ErrorPage.aspx" />
     <Content Include="Exito.aspx" />
     <Content Include="FormDatos.aspx" />
-    <Content Include="FormularioArticulos.aspx" />
     <Content Include="ListaArticulos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -111,13 +110,6 @@
     </Compile>
     <Compile Include="FormDatos.aspx.designer.cs">
       <DependentUpon>FormDatos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FormularioArticulos.aspx.cs">
-      <DependentUpon>FormularioArticulos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FormularioArticulos.aspx.designer.cs">
-      <DependentUpon>FormularioArticulos.aspx</DependentUpon>
     </Compile>
     <Compile Include="ListaArticulos.aspx.cs">
       <DependentUpon>ListaArticulos.aspx</DependentUpon>
