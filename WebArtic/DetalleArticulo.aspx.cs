@@ -81,7 +81,7 @@ namespace WebArtic
 
             if (sIdArticulo != "")
             {
-                Response.Redirect("FormDatos.aspx?" + sIdArticulo, false);
+                Response.Redirect("FormDatos.aspx?id" + sIdArticulo, false);
             }
             else //error falta articulo
             {
