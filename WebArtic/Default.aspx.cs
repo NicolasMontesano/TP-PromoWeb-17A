@@ -42,8 +42,8 @@ namespace WebArtic
                     
                     if(!(voucher.idCliente > 0 && voucher.idArticulo > 0 && voucher.fechaCanje != fecha)) //no se utilizó aún
                     {
-                        Session.Add("voucher", voucher); //envío el voucher por session y lo recuperamos desde las demás páginas
-                        Response.Redirect("ListaArticulos.aspx");
+                        Session.Add("voucher", voucher.codigo); //envío el voucher por session y lo recuperamos desde las demás páginas
+                        Response.Redirect("ListaArticulos.aspx",false);
                     }
                     else //voucher utilizado
                     {

@@ -72,7 +72,7 @@ namespace negocio
 
             try
             {
-                datos.setearConsulta("SELECT Documento, Nombre, Apellido, Email, Direccion, Ciudad, CP FROM Clientes WHERE Documento = @DNI");
+                datos.setearConsulta("SELECT Id, Documento, Nombre, Apellido, Email, Direccion, Ciudad, CP FROM Clientes WHERE Documento = @DNI");
                 datos.setearParametro("@DNI", dni);
                 datos.ejecutarLectura();
 
@@ -80,6 +80,7 @@ namespace negocio
                 {
                     Cliente cliente = new Cliente
                     {
+                        ID = (int)datos.Lector["Id"],
                         DNI = (string)datos.Lector["Documento"],
                         Nombre = (string)datos.Lector["Nombre"],
                         Apellido = (string)datos.Lector["Apellido"],

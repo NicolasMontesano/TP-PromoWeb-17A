@@ -48,5 +48,27 @@ namespace negocio
                 datos.cerrarConexion();
             }
         }
+        public void ActualizarVoucher(Voucher voucher)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("update Vouchers set IdCliente = @idCliente, FechaCanje = @fecha, IdArticulo = @idArticulo where CodigoVoucher = @codigo");
+                datos.setearParametro("@idCliente", voucher.idCliente);
+                datos.setearParametro("@fecha", voucher.fechaCanje);
+                datos.setearParametro("@idArticulo", voucher.idArticulo);
+                datos.setearParametro("@codigo", voucher.codigo);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally 
+            { 
+                datos.cerrarConexion(); 
+            }
+        }
     }
 }

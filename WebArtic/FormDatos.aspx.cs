@@ -52,7 +52,7 @@ namespace WebArtic
         {
             if (ValidarCampos())
             {
-                
+
 
                 Cliente nuevoCliente = new Cliente
                 {
@@ -68,14 +68,33 @@ namespace WebArtic
                 ClienteNegocio negocio = new ClienteNegocio();
                 try
                 {
-                    if (negocio.ExisteClientePorDNI(nuevoCliente.DNI))
+                    Voucher voucher = new Voucher();
+
+                    string sIdArticulo = Request.QueryString["id"] != null ? Request.QueryString["id"].ToString() : "";
+
+                    if (sIdArticulo != "" && !String.IsNullOrEmpty(Session["voucher"].ToString()))
                     {
-                        Response.Redirect("Exito.aspx?nombre=" + nuevoCliente.Nombre);
+                        voucher.codigo = Session["voucher"].ToString();
+                        voucher.idArticulo = Convert.ToInt32(sIdArticulo);
+                        
+                        if (!negocio.ExisteClientePorDNI(nuevoCliente.DNI))
+                        {
+                            negocio.AgregarCliente(nuevoCliente);
+                        }
+
+                        int idCliente = negocio.ObtenerClientePorDNI(nuevoCliente.DNI).ID;
+
+                        voucher.idCliente = idCliente;
+                        voucher.fechaCanje = DateTime.Now;
+
+                        VoucherNegocio voucherNegocio = new VoucherNegocio();
+                        voucherNegocio.ActualizarVoucher(voucher);
+
+                        Response.Redirect("Exito.aspx?nombre=" + nuevoCliente.Nombre, false);
                     }
-                    else
+                    else//error falta idArticulo
                     {
-                        negocio.AgregarCliente(nuevoCliente);
-                        Response.Redirect("Exito.aspx?nombre=" + nuevoCliente.Nombre);
+
                     }
                 }
                 catch (Exception ex)
